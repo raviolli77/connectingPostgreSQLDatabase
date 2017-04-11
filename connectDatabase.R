@@ -10,9 +10,6 @@ host <- strsplit(databaseConnection, '\r\n') # SPLIT THE ini FILE AT EVERY NEW L
 host <- unlist(host) # PRODUCE A VECTOR FROM THE PREVIOUS STRUCTURE
 host <- gsub(".*: ", "", host) # REGULAR EXPRESSIONS TO GET RID OF STUFF THAT'S USEFUL IN PYTHON WHEN DOING ODBC
 
-host[2]
-
-
 con <- dbConnect(RPostgres::Postgres(),
                  host = host[2],
                  dbname = host[3],

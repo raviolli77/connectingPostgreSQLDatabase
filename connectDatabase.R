@@ -23,6 +23,15 @@ rows = dbSendQuery(con, 'SELECT * FROM my_table WHERE some_requirement > 21')
 
 dataTable <- data.table(rows)
 
+    ######################
+    # ANALYSIS GOES HERE #
+    # OR YOU CAN CREATE  #
+    # ANOTHER FUNCTION   #
+    # TO DO WHATEVER     #
+    # ANALYSIS MAKES     #
+    # YOUR HEART HAPPY   #
+    ######################
+
 # USE THIS COMMAND IF YOU WANT TO CREATE A NEW QUERY USING THE SAME NAME 
 dbClearResult(rows)
 
